@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { Article, Brand, Cta, Feature, Navbar } from "./components/index";
 import {
   Blog,
@@ -10,7 +11,21 @@ import {
 } from "./containers/index";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div className="App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Posibility />
+      <Cta />
+      <Blog />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
